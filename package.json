@@ -1,0 +1,26 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^9.3.1",
+    "postcss-cli": "^6.0.1",
+    "postcss-nested": "^4.1.0",
+    "postcss-simple-vars": "^5.0.1"
+  },
+  "scripts": {
+    "build:css": "postcss css/*.css -d build/css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/claireflanagan/portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/claireflanagan/portfolio/issues"
+  },
+  "homepage": "https://github.com/claireflanagan/portfolio#readme"
+}

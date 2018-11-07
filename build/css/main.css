@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+}
+
+body {
+
+}
+
+/* nav */
+
+nav {
+    background-color: #222D3F;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+nav a {
+    padding: 15px 3%;
+    text-decoration: none;
+    color: white;   
+    font-family: 'Source Code Pro', monospace;
+}
+
+nav a:hover {
+        color: #99BE7F;
+    }
+
+
+/* main */
+
+main {
+    height: 80vh;
+}
+
+h1 {
+    margin: 5%;
+    text-align: center;
+    font-family: 'Source Code Pro', monospace;
+}
+.container {
+    display: grid;
+    grid-template-columns: auto 1fr 1fr 1fr auto;
+    grid-gap: 5% 5%;
+}
+.container #first-project {
+        grid-column-start: 2;
+    }
+.container #second-project {
+        grid-column-start: 3;
+    }
+.container #third-project {
+        grid-column-start: 4;
+    }
+.container .project {
+        padding: 15px;
+        transition: all 400ms ease;
+        border: 1px solid #ebecec;
+        border-radius: 6px;
+        box-shadow: 0 1px 2px rgba(0,0,0,.1);
+        margin: .5rem;
+    }
+.container .project .project-link {
+            text-decoration: none;
+            color: inherit;
+        }
+.container .project:hover {
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+.container .project:active {
+            box-shadow: 0 3px 4px rgba(0,0,0,0.3);
+        }
+.container .project img {
+            width: 100%;
+        }
+.container .project #crypto {
+            padding-bottom: 9%;
+        }
+.container .project p { 
+            padding: 15px;
+            font-family: sans-serif;
+        }
+
+
+
+/* footer */
+
+footer {
+    background-color: #222D3F;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center; 
+}
+
+footer img {
+    height: 30px;
+    padding: 15px;
+}
+
+footer img:hover {
+        color: #99BE7F;
+        opacity: 0.7;
+        
+    }
+
+footer #github {
+    height: 40px;
+}
+
+
+@media screen and (max-width: 1100px) {
+    .container {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        grid-template-rows: auto auto auto;
+        grid-gap: 3vh 5%;
+    }
+        .container #first-project {
+            grid-column-start: 2;
+            grid-row-start: 1;
+        }
+        .container #second-project {
+            grid-column-start: 2;
+            grid-row-start: 2;
+        }
+        .container #third-project {
+            grid-column-start: 2;
+            grid-row-start: 3;
+        }
+    main {
+        height: 100%;
+        padding-bottom: 5%;
+    }
+}

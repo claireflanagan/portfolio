@@ -46,6 +46,32 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div> -->
         </div>
+
+        <form class="form" id="project-form">
+                <label for="name"> Project Name: </label>
+                <input type="text" id="name">
+
+                <label for="short-description"> Short Description: </label>
+                <input type="text" id="short-description">
+    
+                <label for="tech"> Technologies Used: </label>
+                <label class="checkbox"> Node JS<input type="checkbox" name="Node JS" value="Node JS"></label>
+                <label class="checkbox">Vue JS<input type="checkbox" name="Vue JS" value="Vue JS"></label>
+                <label class="checkbox">React<input type="checkbox" name="React" value="React"></label>
+
+                <label for="tech"> Individual or Team </label>
+                <label class="radio"> Individual<input type="radio" name="team" value="individual"></label>
+                <label class="radio">Team<input type="radio" name="team" value="team"></label>
+
+
+                <label for="long-description"> Long Description: </label>
+                <textarea id="long-description" rows="10"></textarea>
+
+                <label for="message"> Project Photo: </label>
+                <input type="file" name="fileToUpload" id="fileToUpload">
+    
+                <button type="submit">Submit</button>
+            </form>
     </main>
     <footer>
         <a href="https://github.com/claireflanagan"><img src="images/github-icon-white.jpg" id="github"></a>
